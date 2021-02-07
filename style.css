@@ -1,0 +1,8 @@
+.card-body {
+  text-align: center;
+  color: black; 
+}
+#recipe-area {
+  display: none;
+}
+

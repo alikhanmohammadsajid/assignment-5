@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Hungry-Monster</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container mt-5">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <h1>Hungry Monster</h1>
+            <form class="d-flex">
+              <a class="navbar-brand">Home</a>
+              <a class="navbar-brand">About</a>
+              <a class="navbar-brand">Recipes</a>
+              <a class="navbar-brand">Blog</a>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="navbar mt-5">
+          <form class="container-fluid" id="search-form">
+            <div class="input-group">
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="search-input"
+                placeholder="Find here any kind of food"
+              />
+              <button class="input-group-text">search</button>
+            </div>
+          </form>
+        </nav>
+      </div>
+    </section>
+    <ul id="food-menu"></ul>
+    <section id="recipe-area" class="container">
+      <div
+        class="card mb-3 position-absolute top-50 start-50 translate-middle"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Special Recipe</h5>
+              <p class="card-title">Potato</p>
+              <p class="card-title">Onion</p>
+              <p class="card-title">Chili</p>
+              <p class="card-title">Water</p>
+              <p class="card-title">Salt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="hungry.js"></script>
-</body>
+  </body>
 </html>
